@@ -9,4 +9,4 @@ make
 cd objs/bin/
 curl -s https://core.telegram.org/getProxySecret -o proxy-secret
 curl -s https://core.telegram.org/getProxyConfig -o proxy-multi.conf
-./mtproto-proxy -u nobody -p 8888 -H 443 -S 5717cd718527e90e5823998620571aa9 -P 92628c2693651edd8be60993a91bb86d --aes-pwd proxy-secret proxy-multi.conf -M 1 --allow-skip-dh --crc32c --ipv6 -D cloudflare.com &
+./mtproto-proxy -u nobody -p 8888 -H 443 -S 5717cd718527e90e5823998620571aa9 -P 92628c2693651edd8be60993a91bb86d --aes-pwd proxy-secret proxy-multi.conf -M 1 -D cloudflare.com &
